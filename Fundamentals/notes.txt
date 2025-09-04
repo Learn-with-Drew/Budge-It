@@ -1,0 +1,41 @@
+Learn React Fundamentals
+    - https://nextjs.org/learn/react-foundations
+    - https://react.dev/learn?utm_source=chatgpt.com
+    - focus on components, props, state, effects
+
+    - components
+        - react apps are made up of components
+        - its a piece of the UI and has its own logic and appearance
+        - basically javascript functions that return markup 
+        - ie. function MyButton(){
+            return (<button>im a button </button>);
+        }
+        - with this new button component, can nest into another component
+        - ie. export default function App(){
+            return (
+                <div>
+                    <h1> MY APP </h1>
+                    <MyButton />  <---- React component because it starts with a capital letter
+                </div>
+            )
+        }
+
+    - events
+        - can handle events by putting an event handler inside the component
+        - ie. ((inside MyButton))
+            - function handleClick(){
+                alert ("button clicked");
+            }
+        -  ((inside return of MyButton))
+            - <button onClick={handleClick}>im a button</button>
+
+    - props
+        - What are props? 
+            - pieces of information or properties, or passing in custom arguments to change the behavior of components or what is visibly shown on the page when rendered
+        - 
+
+    - states
+
+    - effects
+
+ Learn NextJS Fundamentals
