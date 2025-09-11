@@ -5,6 +5,8 @@ Learn React Fundamentals
 
     - components
         - react apps are made up of components
+            - self-contained, reusable snippets of code, modular
+            - can add, update, delete components without touching the rest of the application
         - its a piece of the UI and has its own logic and appearance
         - basically javascript functions that return markup 
         - ie. function MyButton(){
@@ -20,22 +22,35 @@ Learn React Fundamentals
             )
         }
 
-    - events
-        - can handle events by putting an event handler inside the component
-        - ie. ((inside MyButton))
-            - function handleClick(){
-                alert ("button clicked");
-            }
-        -  ((inside return of MyButton))
-            - <button onClick={handleClick}>im a button</button>
-
-    - props
+    - props (https://react.dev/learn/passing-props-to-a-component)
         - What are props? 
             - pieces of information or properties, or passing in custom arguments to change the behavior of components or what is visibly shown on the page when rendered
-        - 
+        - can pass down props from parent components to child components
+            - one-way data flow
+        - props are passed as objects
+            - can use destructuring on props
+        - to use props, needs to be inside {}
+            - ie. function Header(props){
+                return <h1>{props.title}</h1>
+            }
+            - inside the h1 tags, has props in {}
 
-    - states
-
-    - effects
+    - State and Event Handlers
+        - Events
+            - can handle events by putting an event handler inside the component
+            - ie. ((inside MyButton))
+                - function handleClick(){
+                    alert ("button clicked");
+                }
+            -  ((inside return of MyButton))
+                - <button onClick={handleClick}>im a button</button>
+        - State
+            - any information in the UI that changes overtime, usually triggered by user interaction
+                - ie. likes/dislike button
 
  Learn NextJS Fundamentals
+
+ - https://nextjs.org/docs/app
+ - https://nextjs.org/learn/dashboard-app
+
+ 
