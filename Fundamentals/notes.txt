@@ -48,9 +48,50 @@ Learn React Fundamentals
             - any information in the UI that changes overtime, usually triggered by user interaction
                 - ie. likes/dislike button
 
- Learn NextJS Fundamentals
+Learn NextJS Fundamentals
 
- - https://nextjs.org/docs/app
- - https://nextjs.org/learn/dashboard-app
+    - https://nextjs.org/docs/app
+    - https://nextjs.org/learn/dashboard-app
 
- 
+    - to start up a development server, do 'pnpm dev'
+        - http://localhost:3000
+
+    Overview of features to learn
+    - Styling 
+        - Tailwind
+            - CSS framework that allowing you to write utility classes directly into react code
+            - ie. <h1 className="text-blue-500">BLUE H1 TITLE</h1>
+            - don't need to maintain stylesheets and don't need to worry about style collisions
+        - CSS Module
+            - allows you to scope CSS to a component by automatically creating unique class names
+            - don't need to worry about style collisions as well
+            - ie. made a file in app/ui named home.module.css 
+                - import that file into a tsx page -> import styles from '@/app/ui/home.module.css';
+                - then can use it, <div className={styles.shape} />
+        - clsx , documentation -> https://github.com/lukeed/clsx
+        - can also use Sass, or CSS-in-jsx libraries such as styled-jsx, styled-components, emotions
+    - Optimization
+        - Fonts, using next/font module
+            - next.js auto optimizes fonts in the application
+            - by downloading the font files at build time and hosts them along with other static assets
+        - Images
+            - with html, can add an image normally with <img> tag BUT that means manually..
+                - ensure the image is responsive for different screen sizes
+                - specify image sizes for different devices
+                - prevent layout shift as images load in
+                - lazy load images outside the user's viewport
+            - INSTEAD use next/image component, its an extension of the html <img> tag
+                - auto optimizes the images
+                    - prevents layout shifts as images are loading
+                    - resizes images, avoids large images on smaller viewports
+                    - lazy loads images by default
+                    - serving images in modern format where applicable
+                - width and height of image should be an aspect ratio identical to the source image
+    - Routing
+    - Data Fetching
+    - Search and Pagination
+    - Mutating Data
+    - Error Handling
+    - Form Validation and Accessibility
+    - Authentication
+    - Metadata
