@@ -87,7 +87,24 @@ Learn NextJS Fundamentals
                     - lazy loads images by default
                     - serving images in modern format where applicable
                 - width and height of image should be an aspect ratio identical to the source image
+        - Navigation
+            - to link between pages, usually its through the <a> element in HTML, BUT the sidebar uses <a> elements
+                - what this means, everytime you click into a different page, there's a full page refresh
+            - <Link> component 
+                - allows you to do client side navigation with javascript
+                - there's no full page refresh
+                    - automatic code-splitting and prefetching
+            - Showing active links
+                - to show what page the user is currently on
     - Routing
+        - nested routing 
+            - next.js uses a file-system routing where folders are used to create nested routes
+                - each folder represents a route segment that maps to a url segment
+            - to create different pages in next.js
+                - create a new route segment using a folder, then add a 'page' file inside it 
+                - ie. created a dashboard folder inside /app and created a page.tsx file inside dashboard folder
+            - note: route structures aren't publicly accessible until a 'page' or 'route' file is added
+        - layout file is the best way to create a shared layout that all pages in your app can use
     - Data Fetching
     - Search and Pagination
     - Mutating Data
