@@ -105,10 +105,16 @@ Learn NextJS Fundamentals
                 - ie. created a dashboard folder inside /app and created a page.tsx file inside dashboard folder
             - note: route structures aren't publicly accessible until a 'page' or 'route' file is added
         - layout file is the best way to create a shared layout that all pages in your app can use
-    - Data Fetching
-    - Search and Pagination
-    - Mutating Data
-    - Error Handling
-    - Form Validation and Accessibility
-    - Authentication
-    - Metadata
+    - client vs server components
+        - use client components when you need..
+            - state and event Handlers eg. onClick, onChange
+            - Lifecycle logic eg. useEffect
+            - Browser only APIs eg. localStorage, window, Navigator.geolocation, etc.
+            - custom hooks 
+        - use server components when you need ..
+            - Fetch data from databases or APIs close to the source
+            - Use API keys, tokens, and other secrets without exposing them to the client
+            - Reduce the amount of JavaScript sent to the browser
+            - Improve the First Contentful Paint (FCP), and stream content progressively to the client
+                - FCP is the timeline for when a user first navigates to a page to when the page is fully loaded
+            
